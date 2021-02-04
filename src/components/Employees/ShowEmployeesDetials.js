@@ -14,7 +14,7 @@ let ShowEmployeesDetials = () => {
     try {
       const response = await fetch(config.API_URL + `/${id}`);
       const employeesData = await response.json();
-      console.log("employeesData", employeesData);
+
       setEmployee(employeesData);
     } catch (e) {
       console.log(e);
@@ -32,7 +32,7 @@ let ShowEmployeesDetials = () => {
     <div className="max-w-8xl mx-auto">
       <div className="flex justify-between   w-full mt-10">
         <h1 className="flex-no-shrink text-90 font-normal text-2xl">
-          User Details
+          Employees Details
         </h1>
         <div>
           <Link to={`/employees`}>

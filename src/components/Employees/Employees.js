@@ -68,7 +68,7 @@ const Employees = () => {
 
   return (
     <>
-      <h1 className="heading">Employees List</h1>
+      <h1 className="heading py-3">Employees List</h1>
       <div className="max-w-8xl mx-auto">
         <table className="employee">
           <thead>
