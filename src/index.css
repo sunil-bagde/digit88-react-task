@@ -1,13 +1,69 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.card {
+  background-color: var(--white);
+  box-shadow: 0 2px 4px 0 #0505054a;
+  border-radius: 0.5rem;
+}
+.max-w-8xl {
+  max-width: 90rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading {
+  text-align: center;
+  color: #9e9e9e;
+}
+
+.employee {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+.view {
+  width: 2rem;
+  height: 2rem;
+  color: #989494;
+  padding: 6px;
+  cursor: pointer;
+}
+.employee td,
+.employee th {
+  border: 1px solid #ddd;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.employee tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.employee tr:hover {
+  background-color: #fff;
+}
+
+.employee th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
