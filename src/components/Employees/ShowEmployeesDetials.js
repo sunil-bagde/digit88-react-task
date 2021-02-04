@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import config from "../../config";
-
+import { Link } from "react-router-dom";
 let ShowEmployeesDetials = () => {
   let { id } = useParams();
   const [employee, setEmployee] = useState({});
@@ -30,10 +30,15 @@ let ShowEmployeesDetials = () => {
   }
   return (
     <div className="max-w-8xl mx-auto">
-      <div className="flex justify-center items-center w-full mt-10">
+      <div className="flex justify-between   w-full mt-10">
         <h1 className="flex-no-shrink text-90 font-normal text-2xl">
           User Details
         </h1>
+        <div>
+          <Link to={`/employees`}>
+            <p className="text-blue-600">Back</p>
+          </Link>
+        </div>
       </div>
 
       <div className="card mt-6 py-3 px-6">
